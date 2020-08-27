@@ -24,7 +24,7 @@ def parse_page(url):
             city = list(city_td.stripped_strings)[0]#获取标签里面的字符串属性返回一个生成器,因此要转化为一个列表
             temp_td = tds[-2]
             min_temp = list(temp_td.stripped_strings)[0]
-            # print(city.encode('utf-8').decode('unicode_escape'), min_temp.encode('utf-8').decode('unicode_escape'))
+            print({"城市":city, "最低气温":min_temp})
 
 def main():
     urls = [
