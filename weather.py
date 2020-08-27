@@ -31,6 +31,8 @@ def main():
     ]
     for url in urls:
         parse_page(url)
+
+
 if __name__ == '__main__':
     main()
 
